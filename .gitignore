@@ -1,0 +1,18 @@
+# IntelliJ
+/.idea
+
+# Gradle
+/.gradle
+/gradlew.bat
+/gradlew
+/gradle
+/build
+
+# Exercism
+/.exercism
+
+# MacOS
+.DS_Store
+
+# JEnv
+.java-version
