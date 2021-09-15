@@ -9,16 +9,18 @@ After seeing a few different pangram implementations in Kotlin while mentoring t
 
 ## Implementations
 
-First two implementations are from:
+So far the implementations are from:
 - Resquivel
-- Ikr
+- Ikr (two versions)
+- Floby-Ip
+- Glennj
 
 ## Results
 
 Can run benchmarks like this: `gradle jmh`
 
 ```
-# Run complete. Total time: 00:16:44
+# Run complete. Total time: 00:41:50
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -26,9 +28,10 @@ experiments, perform baseline and negative tests that provide experimental contr
 the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
 Do not assume the numbers tell you what you want them to tell.
 
-Benchmark                                        Mode  Cnt    Score    Error  Units
-ArmstrongBenchmark.benchmarkIkrArmstrong        thrpt   25  958.268 ± 13.780  ops/s
-ArmstrongBenchmark.benchmarkResquivelArmstrong  thrpt   25  707.781 ± 32.571  ops/s
-
-Benchmark result is saved to /Users/geoffrey/work/learning/exercism/kotlin/exercism-armstrong-jmh/build/reports/jmh/results.txt
+Benchmark                                        Mode  Cnt     Score    Error  Units
+ArmstrongBenchmark.benchmarkFlobyIpArmstrong    thrpt   25  1091.216 ± 13.060  ops/s
+ArmstrongBenchmark.benchmarkGlennjArmstrong     thrpt   25   916.523 ± 40.914  ops/s
+ArmstrongBenchmark.benchmarkIkr2Armstrong       thrpt   25   709.004 ±  6.248  ops/s
+ArmstrongBenchmark.benchmarkIkrArmstrong        thrpt   25  1106.606 ± 18.187  ops/s
+ArmstrongBenchmark.benchmarkResquivelArmstrong  thrpt   25   911.705 ± 39.769  ops/s
 ```

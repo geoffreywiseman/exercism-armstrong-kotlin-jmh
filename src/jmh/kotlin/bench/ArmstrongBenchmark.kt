@@ -19,4 +19,19 @@ open class ArmstrongBenchmark {
 		testCases.forEach { IkrArmstrong.check(it) }
 	}
 
+	@Benchmark
+	fun benchmarkIkr2Armstrong() {
+		testCases.forEach { Ikr2Armstrong.check(it) }
+	}
+
+	@Benchmark
+	fun benchmarkFlobyIpArmstrong() {
+		testCases.forEach { IkrArmstrong.check(it) }
+	}
+
+	@Benchmark
+	fun benchmarkGlennjArmstrong() {
+		testCases.forEach { ResquivelArmstrong.check(it) }
+	}
+
 }
